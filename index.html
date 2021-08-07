@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Fighting game web application."> 
+    <!-- sejak keyword di spam, google ga pake keywords lagi buat searching -->
+    <meta name="keywords" content="jp, ll, br, nasi, ayam, cantik, princess">
+    <meta name="author" content="jp">
+    <title>SLC Fighter</title>
+</head>
+<body>
+    <header>
+        <template >
+            nasi 
+            ayam
+            BR IMBA MAKSIMAL 
+        </template>
+        <h2 style="text-align: center;
+            color: blue;
+            background-color: aqua;
+        ">
+            Choose Your Fighter
+        </h2>
+        <audio controls>
+            <source src="assets/undertale.mp3" type="audio/mpeg"> 
+        </audio>
+        <marquee width="300px" height="80px" direction="down" behavior="alternate">
+            <marquee behavior="alternate">
+                Choose wisely. 
+            </marquee>
+        </marquee>
+        <a href="./fight.html">start fighting</a>
+        
+    </header>
+    <hr>
+
+    <section>
+    <ol type="i">
+        <li>
+            <img src="assets/br.jpg" alt="BR Img" width="150px">
+            <a href="https://www.brandonjuliothenaro.my.id/">
+                BR
+            </a>
+            <ul type="circle">
+                <li><i>Suka Koding</i></li>
+                <li><b>IMBA</b></li>
+            </ul>
+            <table border="12">
+                <tr>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Name
+                    </td>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Description
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        BR Debugging
+                    </td>
+                    <td>
+                        Sebuah debug yang tidak pernah gagal.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Comedy
+                    </td>
+                    <td>
+                        Melawak sehingga orang ketawa.
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <img src="assets/ll.PNG" alt="LL Img" width="150px">
+            <a href="https://www.lionelritchie.my.id/">
+                LL
+            </a>
+            <ul type="disc">
+                <li><strong>IMBA</strong></li>
+                <li><sub>Suka Design</sub></li>
+            </ul>
+            <table border="12">
+                <tr>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Name
+                    </td>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Description
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        LL Coding
+                    </td>
+                    <td>
+                        Sebuah coding yang sangat rapi secara front end.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Sleep
+                    </td>
+                    <td>
+                        Tidur sehingga dia segar.
+                    </td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            
+            <img src="assets/jp.PNG" alt="JP Img" width="150px">
+            <a href="https://jpv.my.id">
+                JP
+            </a>
+            
+            <ul type="square">
+                <li><em>Suka Keyboard</em></li>
+                <li><del>Suka Koding</del></li>
+            </ul>
+            <table border="12">
+                <tr>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Name
+                    </td>
+                    <td style="background-color: rgb(149, 149, 149);">
+                        Skill Description
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JP Setuping
+                    </td>
+                    <td>
+                        Melakukan setup sehingga kerja menjadi sangat kondusif.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        JP Koding
+                    </td>
+                    <td>
+                        Koding dengan sangat kondusif.
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ol>
+    </section>
+    <hr>
+    <form action="">
+        <select name="game-mode" id="select-game">
+            <option>unselected</option>
+            <option>Coding Race</option>
+            <option>Typing Race</option>
+            <option>Teaching Race</option>
+        </select>
+        <br>
+        <label for="radio-br">br</label>
+        <input type="radio" name="hero-radio" id="radio-br" value="br" required>
+        <br>
+        <label for="radio-ll">ll</label>
+        <input type="radio" name="hero-radio" id="radio-ll" value="ll">
+        <br>
+        <label for="radio-jp">jp</label>
+        <input type="radio" name="hero-radio" id="radio-jp" value="jp">
+        <br>
+
+        <label for="choice-reason">Power Multiplier </label>
+        <input type="number" min="1" max="10">
+        <br>
+        <label for="choice-reason">Reason of choosing: </label>
+        <input id="choice-reason" maxlength="20" type="text" required>
+        <!-- ada validasi max sama min -->
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
